@@ -1,6 +1,8 @@
 #!/bin/bash
 
-TIMELINE=$(date)
-echo "script executed at:: $TIMELINE"
+START_TIME=$(date)
+echo "script executed at:: $START_TIME"
 
 sleep 10
+
+END_TIME=$(date)
