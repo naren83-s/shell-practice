@@ -19,6 +19,26 @@ else
 
 fi
 
+echo "installing mysql"
+dnf install mysql -y
+
+if [ $? -ne 0 ]; then
+   echo " instaling my sql ...... FAILURE"
+   exit 1
+else
+   echo " istalling mysql ...... SUCESS"
+fi
+
+echo "installing nodejs"
+dnf install nodejs -y
+
+if [ $? -ne 0 ]; then
+  echo " installing nodejs........FAILURE"
+  exit 1
+else
+   echo " installing nodejs ...... Sucess"
+fi
+
 
 
 
