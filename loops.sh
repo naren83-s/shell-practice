@@ -11,13 +11,14 @@ fi
 
 mkdir -p $LOGS_FOLDER
 
-VALIDATE(){
+VALIDATE() {
 
     if [ $1 -ne 0 ]; then
        echo "$2 ....... FAILURE" | tee -a $LOG_FILE
        exit 1
     else
        echo "$2 ........ SUCESS" | tee -a $LOG_FILE
+    fi
 }
 
 for package in $@ 
